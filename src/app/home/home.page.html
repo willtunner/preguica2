@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+  <div class="menu-top">
+    <div class="menu-left">
+      <ion-img src="assets/icon/menu.png" style="width: 35px;" />
+      <!-- <ion-img src="assets/icon/arrow-left.png" style="width: 35px;" /> -->
+      <h3 style="margin-left: 30%;color: white;">HOME</h3>
+    </div>
+
+    <div class="menu-rigth">
+      <ion-img src="assets/icon/configuration.png" style="width: 35px;" />
+    </div>
+  </div>
+
+  <div class="baner-top">
+    <ion-img src="assets/preguica/preguica.jpg" style="width: 150px;" />
+    <p class="text-info">"INSIRA SEU NOME DE USUÁRIO E SENHA, <br>
+      TU JÁ ESTARÁS ME CATIVANDO, <br>
+      EU NUNCA TE ESQUECEREI, <br>
+      E TU SERÁS ÚNICO PARA MIM"
+    </p>
+  </div>
+
+  <div class="img-login">
+    <img src="assets/preguica/bigboss.jpg" alt="" style="width: 200px; border: solid #417E6F;">
+  </div>
+
+  <div class="container">
+    <ion-button  [disabled]="false" [routerLink]="['/new-orcament']">NOVO ORÇAMENTO</ion-button>
+    <ion-button  [disabled]="true">ABRIR ORÇAMENTO</ion-button>
+    <ion-button  [disabled]="true">CONFIGURAÇÕES</ion-button>
+    <ion-button  [disabled]="true">RELATÓRIOS</ion-button>
+
+    <ion-button color="warning" style="margin-top: 30px;" [routerLink]="['/landing']">SAIR</ion-button>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,26 @@
+.container {
+    text-align: center;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attention {
+    background: #CCE7D4;
+    width: 280px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #417E6F;
+}
+
+ion-content {
+    --ion-background-color : #35363A;
+}
+

@@ -1,0 +1,94 @@
+<ion-content [fullscreen]="true">
+  <div class="menu-top">
+    <div class="menu-left">
+      <ion-img src="assets/icon/menu.png" style="width: 35px;" />
+      <ion-img src="assets/icon/arrow-left.png" [routerLink]="['/home']" style="width: 35px;" />
+      <h3 style="margin-left: 25%;color: white;">ORÇAMENTO</h3>
+    </div>
+
+    <div class="menu-rigth">
+      <ion-img src="assets/icon/configuration.png" style="width: 35px;" />
+    </div>
+  </div>
+
+  <div class="baner-top">
+    <ion-img src="assets/preguica/preguica.jpg" style="width: 150px;" />
+    <p class="text-info">"INSIRA SEU NOME DE USUÁRIO E SENHA, <br>
+      TU JÁ ESTARÁS ME CATIVANDO, <br>
+      EU NUNCA TE ESQUECEREI, <br>
+      E TU SERÁS ÚNICO PARA MIM"
+    </p>
+  </div>
+
+  <form>
+    <div>
+      <ion-item>
+        <ion-input label="NOME DO ORÇAMENTO" labelPlacement="floating" placeholder="Digite o nome do orçamento!" fill="solid" [clearInput]="true" class="orcament-name"></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <p style="padding-left: 15px; color: #417E6F;">EDITAR</p>
+
+      <div class="dados">
+        <p>1</p>
+        <ion-button class="btns" [routerLink]="['/data-of-project']">DADOS DO PROJETO</ion-button>
+        <ion-checkbox></ion-checkbox>
+      </div>
+
+      <div class="dados">
+        <p>1</p>
+        <ion-button class="btns" [routerLink]="['/data-of-services']" >DADOS DOS SERVIÇOS</ion-button>
+        <ion-checkbox></ion-checkbox>
+      </div>
+
+      <div class="dados">
+        <p>1</p>
+        <ion-button class="btns" [disabled]="true" >DADOS DO CLIENTE</ion-button>
+        <ion-checkbox [disabled]="true"></ion-checkbox>
+      </div>
+
+      <div class="dados">
+        <p>1</p>
+        <ion-button class="btns" [disabled]="true">DADOS DO PAGAMENTO</ion-button>
+        <ion-checkbox [disabled]="true"></ion-checkbox>
+      </div>
+
+      <div class="dados">
+        <p>1</p>
+        <ion-button [routerLink]="['/configuration']" class="btns" >CONFIGURAÇÕES</ion-button>
+        <ion-checkbox></ion-checkbox>
+      </div>
+
+    </div>
+
+    <div class="show-values">
+      <div class="show-info">
+        <p style="white-space: nowrap;
+        font-size: smaller;">VALOR PROJETO</p>
+        <input type="text" value="R$ 117.250,00" >
+      </div>
+      <div class="show-info">
+        <p style="white-space: nowrap;
+        font-size: smaller;">% DA OBRA</p>
+        <input type="text" value="3,14%" >
+      </div>
+      <div class="show-info">
+        <p style="white-space: nowrap;
+        font-size: smaller;">PREÇO POR M²</p>
+        <input type="text" value="R$ 37,25" >
+      </div>
+    </div>
+
+    <div class="buttons-div">
+      <ion-button class="btns2" >SALVAR</ion-button>
+      <ion-button class="btns2">SALVAR COMO</ion-button>
+      <ion-button class="btns2">EXCLUIR</ion-button>
+    </div>
+
+    <div style="display: flex;justify-content: center;">
+      <ion-button style="width: 90%;" class="">VISUALIZAR</ion-button>
+    </div>
+  </form>
+
+</ion-content>

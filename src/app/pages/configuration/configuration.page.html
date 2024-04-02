@@ -1,0 +1,71 @@
+<ion-content [fullscreen]="true">
+  <div class="menu-top">
+    <div class="menu-left">
+      <ion-img src="assets/icon/menu.png" style="width: 35px;" />
+      <ion-img src="assets/icon/arrow-left.png" [routerLink]="['/home']" style="width: 35px;" />
+      <h3 style="margin-left: 10%;color: white;">CONFIGURAÇÕES</h3>
+    </div>
+
+    <div class="menu-rigth">
+      <ion-img src="assets/icon/configuration.png" style="width: 35px;" />
+    </div>
+  </div>
+
+  <div class="baner-top">
+    <ion-img src="assets/preguica/preguica.jpg" style="width: 150px;" />
+    <p class="text-info">"CONFIGURAÇÃO FÁCIL OU <br>
+      PERSONALIZE DO SEU JEITO"
+    </p>
+  </div>
+
+  <div class="dados">
+    <ion-checkbox></ion-checkbox>
+    <p style="padding-left: 15px;"> configura facil</p>
+  </div>
+
+  <form [formGroup]="formulario">
+  <div style="display: flex;" class="config-div">
+    <div>
+      <input type="range" orient="vertical" formControlName="valorInput"/>
+    </div>
+
+    <div style="    display: flex;
+    flex-direction: column;
+    align-items: center;">
+      <div class="div-cinza" [ngClass]="{ 'amarela': formulario.get('valorInput')?.value > 70 }">MELHOR</div>
+      <p class="text">"ESCRITÓRIOS COM ALTO CUSTO FIXO, PRODUTO COM DIFERENCIAL E MARCA CONSOLIDADDA COM ALTA DEMANDA"</p>
+      <div class="div-cinza" [ngClass]="{ 'amarela': formulario.get('valorInput')?.value > 30 && formulario.get('valorInput')?.value <= 70 }">ÓTIMA</div>
+      <p class="text">"ESCRITÓRIO COM MÉDIO CUSTO FIXO, PRODUTO NO VIVEL DE BOAS MARCAS, MARCA INICIALMENTE COM MÉDIA DEMANDA"</p>
+      <div class="div-cinza" [ngClass]="{ 'amarela': formulario.get('valorInput')?.value >= 0 && formulario.get('valorInput')?.value <= 30 }">BOA</div>
+      <p class="text">"AUTÔNOMO COM BAIXO CUSTO FIXO, PRODUTO PADRÃO, SEM MARCA COM BAIXA DEMANADA"</p>
+    </div>
+
+  </div>
+</form>
+
+<div style="display: flex; align-items: center;">
+  <div class="dados">
+    <ion-checkbox></ion-checkbox>
+  </div>
+  <div style="margin-left: 70px;">PERSONALIZADA</div>
+</div>
+
+<div class="show-values">
+  <div class="show-info">
+    <p style="white-space: nowrap;
+    font-size: smaller;">VALOR PROJETO</p>
+    <input type="text" value="R$ 117.250,00" >
+  </div>
+  <div class="show-info">
+    <p style="white-space: nowrap;
+    font-size: smaller;">% DA OBRA</p>
+    <input type="text" value="3,14%" >
+  </div>
+  <div class="show-info">
+    <p style="white-space: nowrap;
+    font-size: smaller;">PREÇO POR M²</p>
+    <input type="text" value="R$ 37,25" >
+  </div>
+</div>
+
+</ion-content>

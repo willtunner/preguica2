@@ -1,0 +1,97 @@
+.menu-top {
+    height: 45px;
+    // background-color: bisque;
+  }
+
+  .menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+  .menu-left {
+    display: flex;
+    width: 380px;
+  }
+
+  .menu-rigth {
+    padding-right: 10px;
+  }
+
+  .baner-top {
+    display: flex;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 15px;
+  }
+
+  input[type=range]{
+    -webkit-appearance: slider-vertical; /* WebKit */
+    height: 300px;
+    width: 50px;
+    outline: none;
+}
+
+ion-checkbox {
+  --size: 32px;
+  --checkbox-background-checked: #417E6F;
+}
+
+ion-checkbox::part(container) {
+  border-radius: 6px;
+  border: 2px solid #BAB8C5;
+}
+
+
+.dados {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  color: #ddd;
+}
+
+.div-cinza {
+  width: 100px;
+  height: 50px;
+  background-color: #ccc; /* Cinza */
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.amarela {
+  background-color: yellow;
+  color: sienna;
+}
+
+.text {
+  font-size: 10px;
+}
+
+.show-values {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  align-items: center;
+  p {
+      color: #417E6F;
+      font-size: 15px;
+  }
+  input {
+      width: 120px;
+      background-color: #35363A;
+      border-color: #ddd;
+      color: #ddd;
+      font-weight: 700;
+  }
+
+}
